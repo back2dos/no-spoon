@@ -1,4 +1,4 @@
-# no-spoon ... bend it like Neo
+# `no-spoon` - bend it like Neo!
 
 This library makes it easy to modify/replace existing classes with init macros. Requires at least Haxe 3.2.1.
 
