@@ -1,3 +1,2 @@
 -cp src
 -D no-spoon
--lib tink_macro

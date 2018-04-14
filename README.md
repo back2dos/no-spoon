@@ -1,6 +1,6 @@
 # no-spoon ... bend it like Neo
 
-This library allows you to modify/replace existing classes with init macros.
+This library makes it easy to modify/replace existing classes with init macros. Requires at least Haxe 3.2.1.
 
 ## Patching fields on existing classes
 
@@ -86,9 +86,11 @@ If you call `no.Spoon.replace` after the target type has already been loaded, yo
 
 ## When to use this library
 
-If the idea of using this library seems a bit naughty to you, then that's because it is. In the vast majority of cases you should use this as a temporary bandaid and try to fix the problem upstream. Of course the upstream source may be slow to release patches (e.g. the stdlib) or somehow obsolete (e.g. abandoned library or the stdlib of an old Haxe version etc.). A truly "legitimate" use case is when the changes that you wish to perform are only beneficial in the very narrow use case you're having and outside it would do more harm than good.
+If the idea of using this library seems a bit naughty to you, then that's because it is. In the vast majority of cases you should use this as a temporary bandaid and try to fix the problem upstream. Of course the upstream source may be slow to release patches (e.g. the stdlib) or somehow obsolete (e.g. abandoned library or the stdlib of an old Haxe version etc.). 
 
-There is ample documentation of the pros and cons of monkey patching in JavaScript/Ruby/Python and method swizzling in Objective-C, so if you're in doubt, read up on the subject. There's however one crucial benefit of the technique this library allows: the code replacement is performed at compile time *before static analysis*, meaning there is a pretty solid check in place to make sure that the replacement code is not absolute non-sense.
+A truly "legitimate" use case is when the changes that you wish to perform are only beneficial in the very narrow use case you're having and outside it would do more harm than good.
+
+To a very large extent, what this library does comes close to monkey patching in JavaScript/Ruby/Python and method swizzling in Objective-C. There's however one crucial benefit of the technique this library allows: the code replacement is performed at compile time and will be processed by static analysis, meaning there is a pretty solid check in place to make sure that the replacement code is not absolute non-sense.
 
 ## Alternatives
 

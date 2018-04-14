@@ -1,8 +1,8 @@
 class Modify {
   static function stuff() {
     no.Spoon.bend('Std', macro class {
-      static public inline function answer():Int
-        return 42;
+      static public function is(v:Dynamic, t:Dynamic):Bool
+        return true;
     });
     no.Spoon.bend('RunTests', function (fields, cls) {
       switch fields.find('test') {
