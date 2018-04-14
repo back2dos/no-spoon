@@ -1,17 +1,17 @@
 {
-  "name": "no-spoon",
-  "license": "MIT",
-  "tags": [
-    "macro",
-    "cross",
-    "patching"
-  ],
-  "classPath": "src",
-  "contributors": [
-    "back2dos"
-  ],
-  "releasenote": "initial release",
-  "version": "0.0.0",
-  "url": "https://github.com/back2dos/no-spoon/",
-  "dependencies": {}
+	"name": "no-spoon",
+	"classPath": "src",
+	"dependencies": {},
+	"url": "https://github.com/back2dos/no-spoon/",
+	"contributors": [
+		"back2dos"
+	],
+	"version": "0.1.0",
+	"releasenote": "Initial release.",
+	"tags": [
+		"macro",
+		"cross",
+		"patching"
+	],
+	"license": "MIT"
 }
