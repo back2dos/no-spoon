@@ -2,7 +2,7 @@ package no.spoon;
 
 import haxe.macro.Expr;
 
-@:forward(length)
+@:forward(length, iterator)
 abstract BuildFields(Array<Field>) from Array<Field> to Array<Field> {
 
   @:arrayAccess inline function get(index:Int)
