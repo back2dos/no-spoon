@@ -65,7 +65,7 @@ fields.patch(macro class {
 
 fields.patch(macro class {
   public function foo():Void;
-}, OnlyNew);//will replace `foo` if it exists
+}, OnlyExisting);//will replace `foo` if it exists
 ```
 
 ### Bending caveats
