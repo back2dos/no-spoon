@@ -13,7 +13,7 @@ class Spoon {
     var fields = Context.getBuildFields(),
         cls = Context.getLocalClass();
     
-    benders[id](fields, cls.get());
+    benders[id](fields, if (cls == null) null else cls.get());
     
     return fields;
   }
