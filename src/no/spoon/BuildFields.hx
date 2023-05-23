@@ -45,7 +45,8 @@ abstract BuildFields(Array<Field>) from Array<Field> to Array<Field> {
   }
 }
 
-@:enum abstract PatchKind(String) {
+#if (haxe_ver < 4.3) @:enum #else enum #end
+abstract PatchKind(String) {
   var All = null;
   var OnlyNew = 'OnlyNew';
   var OnlyExisting = 'OnlyExisting';
